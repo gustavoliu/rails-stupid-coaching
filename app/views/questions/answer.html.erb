@@ -1,0 +1,24 @@
+<div class="container">
+  <div>
+    <h3><%= @query %></h3>
+    <h4 class="gray">- You</h4>
+  </div>
+
+  <div>
+    <h3><%= @answer %></h3>
+    <h4 class="gray">- Your coach</h4>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="col-sm-6 col-sm-offset-3">
+  <form action="/answer">
+    <div class="form-group">
+      <label for="usr">You may have another try if you want:</label>
+      <input type="text" name="query" class="form-control">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
